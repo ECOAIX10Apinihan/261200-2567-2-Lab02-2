@@ -10,7 +10,7 @@ public class Book {
     }
 
     void updatePrice(double newPrice){
-        if(newPrice > 0){
+        if(newPrice > 0){ 
             this.price = newPrice;
     } else{
         this.price = -1*newPrice;
