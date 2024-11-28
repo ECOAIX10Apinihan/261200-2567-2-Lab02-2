@@ -13,7 +13,7 @@ public class Book {
         this.price = Math.abs(price);
 
         // Validate and set the discount ส่วนลดควรถูกคำนวนไหม
-        if (discount >= 0 && discount < 100.00) {
+        if (discount >= 0 && discount <= 100.00) {
             this.discount = discount;
             applyDiscount(); // Apply discount during initialization (func คำนวนส่วนลด อัปเดตราคา ) 
         } else {
@@ -48,7 +48,7 @@ public class Book {
 
     // Method to apply the discount to the price (func คำนวนส่วนลด อัปเดตราคา )
     void applyDiscount() {
-        if (discount >= 0.0 && discount < 100.00) {
+        if (discount >= 0.0 && discount <= 100.00) {
             price = ((100.00 - discount) / 100.00) * price;
         } else {
             // Display a message if the discount is invalid 
