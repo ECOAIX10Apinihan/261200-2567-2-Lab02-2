@@ -4,6 +4,7 @@ public class Book {
     double price;
     double discount;
 
+    
     // Parameterized constructor
     Book(String title, String author, double price, double discount) {
         this.title = title;
